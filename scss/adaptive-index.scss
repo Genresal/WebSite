@@ -1,0 +1,116 @@
+@media only screen and (max-width: 950px){
+	.introduction{
+		.row{
+			margin-top: calc(54px + 329 * ((100vw - 375px) / 650));
+			flex-direction: column;
+		}
+		&__description{
+			margin-top: calc(24px + 12 * ((100vw - 375px) / 650));;
+		}
+		&__image{
+			width: 80%;
+			margin-top: calc(36px + 45 * ((100vw - 375px) / 650));
+		}
+
+		.button-link{
+			width: auto;
+			margin-right: 30px;
+			height: calc(54px + 8 * ((100vw - 375px) / 649));
+			button{
+				font-size: calc(16px + 11 * ((100vw - 375px) / 650));
+			}
+		}
+	}
+
+	.column-2-3{
+		width: 80%;
+		.description{
+			width: 100%;
+		}
+	}
+
+	.statistics{
+		flex-direction: column;
+		align-items: flex-start;
+		&-item{
+			width: 80%;
+			margin-left: unset;
+			padding-top: calc(16px + 8 * ((100vw - 375px) / 650));
+			&__text{
+				font-size: calc(19px + 3 * ((100vw - 375px) / 650));
+			}
+			&__number{
+				font-size: calc(81px + 19 * ((100vw - 375px) / 650));
+			}
+		}
+	}
+
+	.statistics > div:not(:last-child){
+		margin-bottom: calc(54px + 27 * ((100vw - 375px) / 650));
+	}
+
+	.description{
+		font-size: calc(19px + 3 * ((100vw - 375px) / 650));
+		width: 80%;
+	}
+	.title{
+		font-size: calc(36px + 18 * ((100vw - 375px) / 650));
+	}
+	.title_big{
+		font-size: calc(54px + 46 * ((100vw - 375px) / 650));
+	}
+
+	.portfolio{
+		.row{
+			flex-direction: column;
+		}
+		.description{
+			width: 100%;
+			line-height: 1.5;
+			margin-top: 30px;
+		}
+		.title{
+			line-height: 1.25;
+		}
+
+		.sticky-wrap{
+			height: auto;
+		}
+		.scroll-section{
+			overflow-x: scroll;
+			height: auto;
+		}
+		.horizontal-scroll{
+			width: max-content;
+			float: left;
+		}
+		&__img{
+			width: 25vw;
+		}
+
+	}
+	.tabs{
+		width: 100%;
+	}
+
+	.tab{
+		text-align: center;
+		&__title{
+			font-size: calc(36px + 18 * ((100vw - 375px) / 650));
+		}
+	}
+
+	.achivments{
+		margin-top: calc(54px + 27 * ((100vw - 375px) / 650));
+		flex-direction: column;
+	}
+
+	.tabs-content{
+		padding-top: calc(16px + 8 * ((100vw - 375px) / 650));
+		width: 92%;
+		margin-left: 4%;
+		.description{
+			width: 100%;
+		}
+	}
+}

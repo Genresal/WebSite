@@ -1,0 +1,148 @@
+@media only screen and (max-width: 950px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  .block-logo__image {
+    width: 10vw;
+  }
+  .menul {
+    -webkit-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+            transform: translateY(-100vh);
+    visibility: hidden;
+    display: none;
+    width: 100%;
+    -webkit-transition: unset;
+    transition: unset;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+  .menul_show {
+    display: block;
+    position: absolute;
+    top: 100%;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: var(--secondary-color);
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: 100vw;
+    padding-top: calc(54px + 27 * (100vw - 375px) / 650);
+  }
+  .menu__item {
+    color: #FFF;
+    font-size: calc(30px + 6 * (100vw - 375px) / 650);
+    line-height: 1.5;
+    margin-left: calc(15px + 25 * (100vw - 375px) / 650);
+    margin-right: calc(15px + 25 * (100vw - 375px) / 650);
+    padding-top: calc(5px + 2 * (100vw - 375px) / 650);
+    padding-bottom: calc(5px + 2 * (100vw - 375px) / 650);
+    border-top: 1px solid #FFF;
+  }
+  .header {
+    -webkit-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+    width: 100vw;
+  }
+  .header:has(.menul_show) {
+    background-color: var(--secondary-color);
+  }
+  .header:has(.menul_show) .block-logo__image {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
+  .burger-button {
+    display: block;
+    height: 30px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: 4vw;
+  }
+  .menu-toggle-bar {
+    display: block;
+    top: 50%;
+    margin-top: -4px;
+    right: 0;
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: black;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .menu-toggle-bar.menu-toggle-bar--top {
+    -webkit-transform: translate(0, -8px);
+        -ms-transform: translate(0, -8px);
+            transform: translate(0, -8px);
+  }
+  .menu-toggle-bar.menu-toggle-bar--bottom {
+    -webkit-transform: translate(0, 8px);
+        -ms-transform: translate(0, 8px);
+            transform: translate(0, 8px);
+  }
+  .menul_show + .burger-button .menu-toggle-bar--top {
+    background-color: #FFF;
+    -webkit-transform: translate(0, 0) rotate(45deg);
+        -ms-transform: translate(0, 0) rotate(45deg);
+            transform: translate(0, 0) rotate(45deg);
+  }
+  .menul_show + .burger-button .menu-toggle-bar--middle {
+    background-color: #FFF;
+    opacity: 0;
+  }
+  .menul_show + .burger-button .menu-toggle-bar--bottom {
+    background-color: #FFF;
+    -webkit-transform: translate(0, 0) rotate(-45deg);
+        -ms-transform: translate(0, 0) rotate(-45deg);
+            transform: translate(0, 0) rotate(-45deg);
+  }
+  .footer__link {
+    font-size: calc(24px + 12 * (100vw - 375px) / 650);
+  }
+  .middle-line {
+    width: 80%;
+  }
+  .middle-line__link {
+    font-size: calc(19px + 3 * (100vw - 375px) / 650);
+  }
+  .bottom-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .bottom-line__image {
+    padding-top: calc(54px + 33 * (100vw - 375px) / 649);
+    margin-left: unset;
+  }
+  .title {
+    font-size: calc(36px + 18 * (100vw - 375px) / 650);
+  }
+  .title_big {
+    font-size: calc(54px + 46 * (100vw - 375px) / 650);
+  }
+  .button-link {
+    width: auto;
+    margin-right: 30px;
+    height: calc(54px + 8 * (100vw - 375px) / 649);
+  }
+  .button-link button {
+    font-size: calc(16px + 11 * (100vw - 375px) / 650);
+  }
+}

@@ -1,0 +1,95 @@
+@media screen and (max-width: 950px) {
+  .offices {
+    padding-bottom: calc(81px + 41 * (100vw - 375px) / 650);
+  }
+  .offices__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: calc(38.4231px + 4.15385vw) 3%;
+  }
+  .offices__row .left-column, .offices__row .right-column {
+    width: auto;
+  }
+  .offices__row .right-column {
+    margin-left: calc(0.576923px + 3.84615vw);
+    margin-right: calc(0.576923px + 3.84615vw);
+  }
+  .offices__title {
+    margin-left: calc(0.576923px + 3.84615vw);
+  }
+  .offices .map {
+    width: 100%;
+  }
+  .expander__title {
+    font-size: calc(19px + 8 * (100vw - 375px) / 650);
+  }
+  .expander .adress-info {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    gap: calc(5px + 2 * (100vw - 375px) / 650);
+    padding-top: calc(11px + 5 * (100vw - 375px) / 650);
+    padding-bottom: calc(16px + 8 * (100vw - 375px) / 650);
+  }
+  .expander .adress-info .city {
+    font-size: calc(19px + 3 * (100vw - 375px) / 650);
+  }
+  .expander .adress-info .adress {
+    font-size: calc(14px + 2 * (100vw - 375px) / 650);
+  }
+  .contact-form {
+    padding: calc(54px + 27 * (100vw - 375px) / 650) calc(15px + 25 * (100vw - 375px) / 650) calc(81px + 41 * (100vw - 375px) / 650) calc(15px + 25 * (100vw - 375px) / 650);
+  }
+  .contact-form .description {
+    font-size: calc(19px + 3 * (100vw - 375px) / 650);
+    padding-top: calc(16px + 8 * (100vw - 375px) / 650);
+  }
+  .contact-form .row {
+    gap: calc(36px + 18 * (100vw - 375px) / 650);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-form .row .left-column, .contact-form .row .right-column {
+    width: auto;
+  }
+  .contact-form .form .label {
+    font-size: calc(25.2692px + 0.461539vw);
+    margin: 0px 0px calc(11.3846px + 1.23077vw);
+  }
+  .contact-form .form .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: calc(36px + 18 * (100vw - 375px) / 650);
+  }
+  .contact-form .form .row label {
+    font-size: calc(14px + 4 * (100vw - 375px) / 650);
+  }
+  .contact-form .form .row label::before {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-form .form .row label::after {
+    width: 14px;
+    height: 14px;
+    left: 3px;
+  }
+  .contact-form .form .input, .contact-form .form .file-chosen {
+    font-size: calc(16px + 3 * (100vw - 375px) / 650);
+  }
+  .contact-form .form .input-warning {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .contact-form .form .input-wrap {
+    margin-bottom: 26px;
+  }
+  .contact-form .button-link {
+    margin-right: 0;
+    width: auto;
+  }
+}

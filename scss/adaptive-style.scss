@@ -1,0 +1,117 @@
+@media only screen and (max-width: 950px) {
+	html, body{
+		overflow-x: hidden;
+		width: 100vw;
+	}
+	.block-logo__image{
+		width: 10vw;
+	}
+	.menul{
+		transform: translateY(-100vh);
+		visibility: hidden;
+		display: none;
+		width: 100%;
+		transition: unset;
+		transition: transform .3s ease-out;
+		&_show{
+			display: block;
+			position: absolute;
+			top: 100%;
+			visibility: visible;
+			display: flex;
+			flex-direction: column;
+			background-color: var(--secondary-color);
+			left: 0;
+			transform: none;
+			width: 100vw;
+			padding-top: calc(54px + 27 * ((100vw - 375px) / 650));
+		}
+	}
+	.menu__item{
+		color: #FFF;
+		font-size: calc(30px + 6 * ((100vw - 375px) / 650));
+		line-height: 1.5;
+		margin-left: calc(15px + 25 * ((100vw - 375px) / 650));
+		margin-right: calc(15px + 25 * ((100vw - 375px) / 650));
+		padding-top: calc(5px + 2 * ((100vw - 375px) / 650));
+		padding-bottom: calc(5px + 2 * ((100vw - 375px) / 650));
+		border-top: 1px solid #FFF;
+	}
+	.header{
+		transition: background-color .3s ease-out;
+		width: 100vw;
+	}
+	.header:has(.menul_show){
+		background-color: var(--secondary-color);
+	}
+
+	.header:has(.menul_show) .block-logo__image{
+		filter: invert(100%);
+	}
+	.burger-button{
+		display: block;
+		height: 30px;
+		width: max-content;
+		margin-left: auto;
+		margin-right: 4vw;
+	}
+
+	.nav{
+	}
+	.menu-toggle-bar {
+		display: block;
+		top: 50%;
+		margin-top: -4px;
+		right: 0;
+		width: 30px;
+		height: 4px;
+		border-radius: 4px;
+		background-color: black;
+		transition: all 0.3s ease;
+
+		&.menu-toggle-bar--top {
+			transform: translate(0, -8px);
+		}
+		&.menu-toggle-bar--middle {
+		}
+		&.menu-toggle-bar--bottom {
+			transform: translate(0, 8px);
+		}
+	}
+
+	.menul_show + .burger-button{
+		.menu-toggle-bar--top {
+			background-color: #FFF;
+			transform: translate(0, 0) rotate(45deg);
+		}
+		.menu-toggle-bar--middle {
+			background-color: #FFF;
+			opacity: 0;
+		}
+		.menu-toggle-bar--bottom {
+			background-color: #FFF;
+			transform: translate(0, 0) rotate(-45deg);
+		}
+	}
+	.footer{
+		&__link{
+			font-size: calc(24px + 12 * ((100vw - 375px) / 650));
+		}
+	}
+
+	.middle-line{
+		width: 80%;
+		&__link{
+			font-size: calc(19px + 3 * ((100vw - 375px) / 650));
+		}
+	}
+
+	.bottom-line{
+		flex-direction: column;
+		align-items: start;
+		&__image{
+			padding-top: calc(54px + 33 * ((100vw - 375px) / 649));
+			margin-left: unset;
+		}
+	}
+}
