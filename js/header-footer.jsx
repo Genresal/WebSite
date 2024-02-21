@@ -56,7 +56,7 @@ class Header extends React.Component {
 const footer = (
   <footer className="footer">
     <a className="footer__link" href="#">
-      careers@solvix-group.com
+      contact@solvix-group.com
     </a>
     <div className="middle-line">
       <a href="/about" className="middle-line__link">

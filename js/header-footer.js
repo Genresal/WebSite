@@ -83,7 +83,7 @@ var footer = /*#__PURE__*/React.createElement("footer", {
 }, /*#__PURE__*/React.createElement("a", {
   className: "footer__link",
   href: "#"
-}, "careers@solvix-group.com"), /*#__PURE__*/React.createElement("div", {
+}, "contact@solvix-group.com"), /*#__PURE__*/React.createElement("div", {
   className: "middle-line"
 }, /*#__PURE__*/React.createElement("a", {
   href: "/about",
