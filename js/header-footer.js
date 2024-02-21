@@ -61,7 +61,7 @@ var Header = /*#__PURE__*/function (_React$Component) {
       }, "Development"), /*#__PURE__*/React.createElement("a", {
         className: "menu__item",
         href: "/vacancies"
-      }, "Vacancies"), /*#__PURE__*/React.createElement("a", {
+      }, "Careers"), /*#__PURE__*/React.createElement("a", {
         className: "menu__item menu__item_bordered",
         href: "/contact"
       }, "Contact us")), /*#__PURE__*/React.createElement("button", {
